@@ -29,12 +29,12 @@ const About = () => {
   });
 
   return (
-    <section id="about" className="noisy relative overflow-hidden px-8 lg:px-20">
-      <div className="content mb-20 relative z-10">
-        <h2 className="about-title lg:col-span-7 !font-serif text-white text-5xl md:text-6xl">
+    <section id="about" className="noisy relative w-full overflow-hidden px-8 lg:px-20">
+      <div className="content relative z-10 w-full container mx-auto mb-20 gap-20 ">
+        <h2 className="about-title lg:col-span-6 !font-serif text-white text-5xl md:text-6xl">
           Crafting unforgettable experiences, one sip at a time.
         </h2>
-        <div className="sub-content lg:col-span-5">
+        <div className="sub-content lg:col-span-6">
           <p>
             We believe that every cocktail has a story. Our expert mixologists use only the finest, handpicked ingredients to create drinks that not only taste extraordinary but look like a work of art.
           </p>

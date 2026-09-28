@@ -16,8 +16,8 @@ const Navbar = () => {
     <nav className={`transition-all duration-300 ${isScrolled ? "backdrop-blur-md bg-black/50" : "bg-transparent"}`}>
       <div className="!px-8 lg:!px-20">
         <a href="#home" className="flex items-center gap-2">
-          <img src="../public/images/logo.png" alt="logo" />
-          <p>valvet pour</p>
+          <img src="/images/logo.png" alt="logo" />
+          <p>velvet pour</p>
         </a>
         <ul>
           {navLinks.map((link) => (

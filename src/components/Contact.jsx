@@ -33,8 +33,8 @@ const Contact = () => {
 
   return (
     <section id="contact" className="noisy">
-      <img src="../images/footer-left-leaf.png" alt="left leaf" id="f-left-leaf" />
-      <img src="../images/footer-right-leaf.png" alt="right leaf" id="f-right-leaf" />
+      <img src="/images/footer-left-leaf.png" alt="left leaf" id="f-left-leaf" />
+      <img src="/images/footer-right-leaf.png" alt="right leaf" id="f-right-leaf" />
       
       <div className="content relative z-10">
         <h2 className="contact-fade-up">{storeInfo.heading}</h2>
@@ -68,7 +68,14 @@ const Contact = () => {
 
         <div className="socials flex justify-center gap-5 mt-10 contact-fade-up">
           {socials.map((social, index) => (
-            <a href={social.url} key={index} className="hover:-translate-y-2 hover:scale-110 transition-all duration-300">
+            <a
+              href={social.url}
+              key={index}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={social.name}
+              className="hover:-translate-y-2 hover:scale-110 transition-all duration-300"
+            >
               <img src={social.icon} alt={social.name} className="w-8 h-8 object-contain" />
             </a>
           ))}
