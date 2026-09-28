@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: "Modern Negra";
-    src: url("/fonts/Modern Negra Demo.ttf") format("truetype");
+    src: url("/fonts/Modern%20Negra%20Demo.ttf") format("truetype");
 }
 
 @theme {
@@ -142,6 +142,9 @@ body {
 
     video {
         @apply w-full md:h-[80%] h-1/2 absolute bottom-0 left-0 md:object-contain object-bottom object-cover;
+        filter: contrast(1.18) brightness(0.94);
+        mask-image: radial-gradient(ellipse 70% 70% at 50% 50%, black 50%, transparent 95%);
+        -webkit-mask-image: radial-gradient(ellipse 70% 70% at 50% 50%, black 50%, transparent 95%);
     }
 
     #cocktails {
@@ -193,27 +196,27 @@ body {
     }
 
     #about {
-        @apply py-20 2xl:px-0 px-5 container mx-auto;
+        @apply relative w-full overflow-hidden py-24 md:py-32;
 
         .content {
-            @apply grid grid-cols-1 lg:grid-cols-12 gap-5;
+            @apply container mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 items-start;
 
             h2 {
-                @apply text-5xl md:text-6xl font-modern-negra max-w-lg;
+                @apply text-5xl md:text-6xl 2xl:text-7xl font-modern-negra w-full;
             }
 
             .sub-content {
-                @apply md:col-span-4 space-y-5 flex flex-col justify-between;
+                @apply space-y-6 flex flex-col justify-between;
 
                 p {
-                    @apply text-lg;
+                    @apply text-lg 2xl:text-xl leading-relaxed;
                 }
 
                 div {
-                    @apply flex flex-col justify-between md:gap-2 gap-5;
+                    @apply flex flex-row justify-start gap-12 mt-6;
 
                     span {
-                        @apply text-yellow font-bold text-5xl;
+                        @apply text-yellow font-bold text-5xl 2xl:text-6xl;
                     }
                 }
             }
